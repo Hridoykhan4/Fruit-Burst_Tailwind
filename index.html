@@ -1,148 +1,155 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grateful Organic</title>
+    <link rel="icon" type="image/x-icon" href="images/headLogo.jpg" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Grateful Organic</title>
-  <link rel="icon" type="image/x-icon" href="images/headLogo.jpg">
+    <!-- Tailwind css and Daisyui CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Tailwind css and Daisyui CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fontawsome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <!-- Fontawsome CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Google font CDN -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-
-  <style>
-    .font-manrope {
-      font-family: "Manrope", system-ui;
-    }
-  </style>
-
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-            'btn-color': '#ABEF5F',
-            'light-btn': '#ABEF5F80',
-          }
-        }
+    <style>
+      .font-manrope {
+        font-family: "Manrope", system-ui;
       }
-    }
-  </script>
-  <title>Fruit Burst</title>
-</head>
+    </style>
 
-<body>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "btn-color": "#F85559",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Fruit Burst</title>
+  </head>
 
-<header class="max-w-[1440px] mx-auto md:w-[80%]">
-    <div class="navbar bg-base-100">
-        
+  <body>
+    <header class="max-w-[1440px] mx-auto md:w-[80%] ">
+      <div class="navbar bg-base-100 bg-btn-color">
         <div class="navbar-start hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
-            <li><a>Item 1</a></li>
-            <li>
-              <details>
-                <summary>Parent</summary>
+          <ul class="menu font-bold text-white menu-horizontal px-1">
+            <li><a>Home</a></li>
+             <li><a>About Us</a></li>
+             <li><a>Shop</a></li>
+             <li><a>All Fruits</a></li>
+          </ul>
+        </div>
+        <div class="navbar-center">
+          <img src="images/logo.png" alt="" />
+          <a class="btn btn-ghost text-xl">FruitBurst</a>
+        </div>
+        <div class="navbar-end">
+          <div class="relative hidden md:block">
+            <i class="absolute top-4 right-2 fa-solid fa-search ms-40"></i>
+            <input
+              type="text"
+              placeholder="Search"
+              class="input input-bordered w-24 md:w-auto"
+            />
+          </div>
+          <div class="dropdown dropdown-end md:hidden">
+            <div tabindex="0" role="button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li><a>Item 1</a></li>
+              <li>
+                <a>Parent</a>
                 <ul class="p-2">
                   <li><a>Submenu 1</a></li>
                   <li><a>Submenu 2</a></li>
                 </ul>
-              </details>
-            </li>
-            <li><a>Item 3</a></li>
-          </ul>
-        </div>
-        <div class="navbar-center">
-            <img src="images/logo.png" alt="">
-          <a class="btn btn-ghost text-xl">FruitBurst</a>
-        </div>
-        <div class="navbar-end">
-            <div class="form-control hidden md:flex">
-                <input type="text" placeholder="Search here" class="input input-bordered w-24 md:w-auto" />
-              </div>
-              <div class="dropdown dropdown-end lg:hidden">
-                <div tabindex="0" role="button" >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h8m-8 6h16" />
-                  </svg>
-                </div>
-                <ul
-                  tabindex="0"
-                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                  <li><a>Item 1</a></li>
-                  <li>
-                    <a>Parent</a>
-                    <ul class="p-2">
-                      <li><a>Submenu 1</a></li>
-                      <li><a>Submenu 2</a></li>
-                    </ul>
-                  </li>
-                  <li><a>Item 3</a></li>
-                </ul>
-              </div>
+              </li>
+              <li><a>Item 3</a></li>
+            </ul>
+          </div>
         </div>
       </div>
-    
-</header>
+    </header>
+
+    <main class="max-w-[1440px] md:w-[80%] mx-auto">
+
+    <section class="my-14 p-2">
+    <div class="bg-[url('./images/banner4.png')] bg-cover bg-no-repeat text-center relative bg-center">
+        <div class="min-h-[500px] flex flex-col justify-center items-center bg-black bg-opacity-60 space-y-5">
+            <h1 class="text-6xl text-white font-bold">Exotic Tastes at your doorstep</h1>
+            <p class="text-white font-bold">We supply highly quality organic products</p>
+            <button class="bg-btn-color p-2 rounded text-white">Shop Now</button>
+
+            
+        </div>
+        <div class="hidden absolute top-[400px]
+         md:flex justify-center w-full bg-white mx-auto">
+            <img src="images/fruit1.png" alt="">
+            <img src="images/fruit2.png" alt="">
+            <img src="images/fruit3.png" alt="">
+            <img src="images/fruit4.png" alt="">
+            <img src="images/fruit5.png" alt="">
+        </div>
+    </div>
+    </section>
+
+
+    <section>
+        
+    </section>
 
 
 
 
 
 
-</body>
+    </main>
 
 
+
+
+  </body>
 </html>
 
-<!-- <div class="dropdown">
-    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="h-5 w-5"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor">
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M4 6h16M4 12h8m-8 6h16" />
-      </svg>
-    </div>
-    <ul
-      tabindex="0"
-      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-      <li><a>Item 1</a></li>
-      <li>
-        <a>Parent</a>
-        <ul class="p-2">
-          <li><a>Submenu 1</a></li>
-          <li><a>Submenu 2</a></li>
-        </ul>
-      </li>
-      <li><a>Item 3</a></li>
-    </ul>
-  </div> -->
-  <!--  -->
 
